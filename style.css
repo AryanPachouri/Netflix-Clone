@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/51c1d7f7-3179-4a55-93d9-704722898999/be90e543-c951-40d0-9ef5-e067f3e33d16/IN-en-20240610-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1600px, 100vw);
+    height: 75vh;
+    position: relative;
+
+}
+
+.main .box {
+    height: 75vh;
+    opacity: 0.4;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 23px;
+    position: relative;
+    z-index: 10;
+}
+
+.main .shade {
+    background-color: rgba(0, 0, 0, 0.736);
+    padding-bottom: 30px;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+    gap: 15px;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero .big {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.hero .medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.hero :nth-child(3) {
+    font-size: 1.25rem;
+}
+
+.input {
+    text-align: center;
+}
+
+.red-white {
+    padding: 5px 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: 0.1px solid rgba(255, 255, 255, 0.501);
+}
+
+.trans-white {
+    background-color: rgba(59, 57, 57, 0.373);
+    color: white;
+    padding: 5px 40px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.9rem;
+    margin-right: 20px;
+    border: 0.1px solid rgba(255, 255, 255, 0.501);
+    outline: none;
+}
+
+.input .red-white {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px 30px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0.281);
+    font-size: 1rem;
+    padding: 15px;
+    width: 400px;
+    border: 0.1px solid rgba(255, 255, 255, 0.501);
+    color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type=email]:focus {
+    border: 3px solid #eae3e3;
+}
+
+.red-white:hover{
+    background-color: rgb(215, 14, 14);
+}
