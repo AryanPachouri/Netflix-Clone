@@ -14,13 +14,14 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: max(1600px, 100vw);
-    height: 80vh;
+    height: auto;
     position: relative;
+    width: 100%;
 
 }
 
 .main .box {
-    height: 80vh;
+    height: auto;
     opacity: 0.4;
     width: 100%;
     background-color: black;
@@ -175,6 +176,7 @@ input[type=email]:focus {
     display: grid;
     justify-items: center;
     align-items: center;
+    text-align: center;
 }
 .secimage img{
     grid-row: 1/2;
@@ -189,7 +191,7 @@ input[type=email]:focus {
 
 .third .secimage video{
     margin-bottom: 140px;
-    width: 65%;
+    width: 405px;
 }
 
 .first .big{
@@ -259,3 +261,66 @@ footer{
     margin: 20px auto 50px;
     font-size: 0.95rem;
 }
+
+@media screen and (max-width:1300px) {
+    
+    *{
+        overflow-x: hidden;
+    }
+    body{
+        width: 100%;
+    }
+    .first{
+        flex-direction: column;
+    }
+
+    .second , .fourth{
+        flex-direction: column-reverse;
+    }
+    .query{
+        grid-template-columns: 1fr 1fr;
+    }
+    .col-3,.col-4{
+        margin-top: 10px;
+    }
+    section{
+        margin: 0;
+    }
+    .faqbox{
+        width: 80%;
+        font-size: 1rem;;
+    }
+    .big {
+        font-size: 2rem;
+    }
+    .medium{
+        font-size: 1rem;
+    }
+    .faq svg{
+        width: 24px;
+        height: 24px;
+    }
+    section img,video{
+        transform: scale(0.75);
+    }
+    .first .seccont {
+        align-items: center;
+        text-align: center;
+    }
+    .input .red-white{
+        font-size: 1rem;
+        padding: 8px 27px 8px 20px;
+
+    }
+}
+/* @media screen and (max-width:700px) {
+    .input .red-white{
+        font-size: 1rem;
+        padding: 8px 27px 8px 20px;
+    }
+    .input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+} */
