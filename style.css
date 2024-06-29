@@ -61,6 +61,7 @@ nav button {
     gap: 15px;
     text-align: center;
     padding: 30px;
+    padding-bottom: 100px;
 }
 
 .big {
@@ -264,9 +265,9 @@ footer{
 
 @media screen and (max-width:1300px) {
     
-    *{
+    /* *{
         overflow-x: hidden;
-    }
+    } */
     body{
         width: 100%;
     }
@@ -313,8 +314,8 @@ footer{
 
     }
 }
-/* @media screen and (max-width:700px) {
-    .input .red-white{
+@media screen and (max-width:700px) {
+    /* .input .red-white{
         font-size: 1rem;
         padding: 8px 27px 8px 20px;
     }
@@ -322,5 +323,26 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
+    } */
+
+    .secimage img{
+        width: 300px;
     }
-} */
+    .secimage video {
+        width: 300px;
+    }
+
+    .third .secimage video{
+        margin-bottom: 75px;
+        width: 206px;
+    }
+    .third .secimage img{
+        width: 340px;
+    }
+    .input input{
+        width: auto;
+    }
+    .hero{
+        padding-bottom: 40px;
+    }
+}
